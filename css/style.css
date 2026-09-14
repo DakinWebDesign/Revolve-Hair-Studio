@@ -1404,3 +1404,21 @@ figure { margin: 0; }
   .lookbook-head .h2 { font-size: 1.9rem; }
   .lookbook-caption { bottom: 22px; }
 }
+
+/* ---------- Display type legibility ----------
+   Bodoni Moda is a variable font whose hairlines get thinner as the optical
+   size goes up. Pinning the optical size low and nudging the weight keeps the
+   Didone character of the logo while the thin strokes of Y, X, V and W stay
+   solid on screen. */
+.h2, .hero-title, .hero-swap, .word, .rl-text, .intro-lead, .lc-title, .lc-num,
+.sc-body h3, .sc-num, .stylist h3, .hiring-card h3, .hours h3, .accordion summary,
+.review-card p, .services-foot p, .studio-points strong, .stat-num, .rating-num,
+.ticker-track, .brand-name, .js-num, .lb-close, .lb-prev, .lb-next, .mobile-menu nav a,
+.tile figcaption span {
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 22;
+}
+.h2, .hero-title, .rl-text, .lc-title, .sc-body h3, .stylist h3, .hiring-card h3,
+.hours h3, .accordion summary, .mobile-menu nav a, .ticker-track, .brand-name, .stat-num { font-weight: 500; }
+.h2 em, .hero-swap, .word, .rl-italic { font-weight: 500; }
+.review-card p, .intro-lead, .services-foot p { font-weight: 500; }
